@@ -5,7 +5,7 @@
   "author": "LocoField <aiesko@locofield.com",
   "license": "MIT",
   "private": true,
-  "homepage": "http://wedding.locofield.com",
+  "homepage": "https://wedding.locofield.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
