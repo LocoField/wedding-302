@@ -13,6 +13,7 @@ import {
   WEDDING_DATE_FORMAT,
 } from "./src/const"
 
+const useHttps = fs.existsSync("/home/locofield/certs/fullchain.pem")
 const distFolder = "build"
 
 let base = "/"
