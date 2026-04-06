@@ -49,10 +49,29 @@ export default defineConfig({
       },
     },
   ],
-  server: { port: 3000 },
-  build: { outDir: distFolder },
-  base,
-  preview: {
-    allowedHosts: ['locofield.com', 'wedding.locofield.com'],
+
+  server: {
+    host: "0.0.0.0",
+    port: 3000
   },
+
+  preview: {
+    host: "0.0.0.0",
+    port: 4173,
+    allowedHosts: ['wedding.locofield.com'],
+    https: useHttps
+      ? {
+          key: fs.readFileSync(
+            "/home/locofield/certs/privkey.pem",
+          ),
+          cert: fs.readFileSync(
+            "/home/locofield/certs/fullchain.pem",
+          ),
+        }
+      : undefined,
+  },
+
+  build: { outDir: distFolder },
+
+  base,
 })
