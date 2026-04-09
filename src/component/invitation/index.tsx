@@ -25,7 +25,7 @@ export const Invitation = () => {
 
       <div className="break" />
 
-      <div className="content">서로 다른 길을 걸어온 저희 두 사람이</div>
+      <div className="content">다른 길을 걸어온 저희 두 사람이</div>
       <div className="content">서로를 만나 함께하는 기쁨을 알게 되었고,</div>
       <div className="content">이제 같은 곳을 바라보며</div>
       <div className="content">인생의 동반자가 되고자 합니다.</div>
