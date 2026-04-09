@@ -14,7 +14,7 @@ import {
 } from "./src/const"
 
 const useHttps = fs.existsSync("/home/locofield/certs/fullchain.pem")
-const distFolder = "build"
+const distFolder = "dist"
 
 let base = "/"
 
